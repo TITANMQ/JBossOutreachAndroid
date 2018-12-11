@@ -3,11 +3,68 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contributors"
         android:textSize="28dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/podium"
+        >
+        <ImageView
+            android:id="@+id/secondPlaceAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src ="@drawable/baseline_person_black_18dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginLeft="36dp"/>
+        <TextView
+            android:id="@+id/secondPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2nd_place"
+            android:paddingLeft="25dp"
+            android:paddingTop="130dp" />
+
+        <ImageView
+            android:id="@+id/firstPlaceAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src ="@drawable/baseline_person_black_18dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="160dp"/>
+
+        <TextView
+            android:id="@+id/firstPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st place"
+            android:paddingLeft="160dp"
+            android:paddingTop="65dp"/>
+
+        <ImageView
+            android:id="@+id/thirdPlaceAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src ="@drawable/baseline_person_black_18dp"
+            android:layout_marginTop="112dp"
+            android:layout_marginLeft="290dp"/>
+        <TextView
+            android:id="@+id/thirdPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3rd place"
+            android:paddingLeft="290dp"
+            android:paddingTop="179dp"/>
+
+    </RelativeLayout>
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rVContributors"
         android:layout_width="match_parent"
